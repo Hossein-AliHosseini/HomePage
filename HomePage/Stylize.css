@@ -1,0 +1,118 @@
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: black;
+  font-family: 'Vazir', 'B-Nazanin', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+  text-align: right;
+  direction: rtl;
+}
+p{
+  color: black;  
+  font-family: 'Vazir', 'B-Nazanin', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+}
+#besm{
+    margin-left: 1000px;
+}
+#name{
+  color: maroon;  
+  font-size: 2.5em;
+  font-weight: 500;
+  letter-spacing: .01em;
+  line-height: 0.6;
+}
+#Menu{
+    float: right;
+}
+#mainmenu{
+    margin: 5px;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    border-bottom: 3px solid maroon;
+}
+#lefttop{
+    margin-right: 1000px;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+#lefttop:hover{
+    color: maroon;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li a {
+    text-decoration: none;
+    background-color: maroon;
+    color: yellow;
+    display: block;
+    width: auto;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    height: 50px;
+    line-height: 25px;
+
+}
+ul li a:hover{
+    background-color: silver;
+    color: rgb(0, 29, 82);
+    border: 1px solid  rgb(0, 29, 82);
+}
+.contain{
+    float: right;
+    margin-right: 5%;
+}
+
+.top{
+    float: right;
+    margin-right: 5%;
+    border-bottom: 3px solid maroon;
+    padding: 10px;
+}
+.imagec{
+    float: left;
+    margin-left: 10%;
+}
+.contactInf{
+    color: maroon;
+    display: block;
+    width: 500px;
+    margin: 5px;
+    padding: 10px;
+    text-align: right;
+    line-height: 25px;
+    border-bottom: 2px solid darkblue;
+}
+.eduInter{
+    color: maroon;
+    display: block;
+    width: 500px;
+    margin: 5px;
+    padding: 10px;
+    text-align: right;
+    line-height: 25px;
+    border-bottom: 2px dotted darkblue;
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <header> 
+        <link rel="stylesheet" href="Stylize.css"/>      
+        <script src="https://kit.fontawesome.com/d1e8e6d51a.js" crossorigin="anonymous"></script>
+        <script>
+            function del()
+            {
+                
+                if(document.getElementById('firstname').value != "" && document.getElementById('email').value != "" && document.getElementById('Suggestion').value != "")
+                {
+                    document.getElementById('sent').style.color = "darkgreen";
+                     document.getElementById('sent').innerText= "پیام شما با موفقیت ارسال شد ";
+                     document.getElementById('firstname').value = "";
+                     document.getElementById('email').value = "";
+                     document.getElementById('Suggestion').value = "";
+                     
+                }
+                else
+                {
+                    document.getElementById('sent').style.color = "red";
+                    document.getElementById('sent').innerText= "لطفا تمام کادر ها را پر کنید ";
+                    
+                }
+                clear();
+            }
+            function clear()
+            {
+                setTimeout(function(){document.getElementById('sent').innerText= "";} , 3000);              
+            }
+        </script>
+    </header>
+    <body>
+        <div id="Menu">
+            <p id="mainmenu">منوی اصلی </p></br>
+            <ul>
+                <li><a class="menuLinks" href="MainPage.html">صفحه‌ی اصلی</a> </li>
+                <li><a class="menuLinks" href="Contact.html"> تماس</a> </li>
+                <li><a class="menuLinks" href="Educational-Interests.html">علایق پژوهشی</a> </li>
+            </ul>
+        </div>
+        <div class="top">
+            <p>
+                <img src="sharif.jpg"  width="80" height="80">
+                <a id="lefttop" href="MainPage.html">«صفحه‌ی اصلی»</a>     
+            </p>
+        </div>
+        <div class="contain">
+        </br>
+        <p>
+            <span id="name"> اطلاعات تماس </span>
+        </p>
+    </br>
+        <p>
+            اطلاعات تماس بنده در زیر درج شده‌است. شنیدن نظر و صحبت های شما باعث افتخار من خواهد بود. 
+        </p>
+            <div>
+            </br>
+                <p class="contactInf"><i class="far fa-envelope"></i> ایمیل : alihosseini@ce.sharif.edu </p>
+                <p class="contactInf"><i class='fas fa-phone'></i> تلفن : 9014289008 (98+) </p>
+                <p class="contactInf"><i class='fas fa-home'></i> آدرس : دانشکده مهندسی کامپیوتر، دانشگاه صنعتی شریف، تهران، ایران </p>
+            </div>
+        </br></br></br>
+        <p>
+            برای انتقال پیشنهادتان لطفا کادرهای زیر را پرکنید. </br>
+        </p>
+        <div>
+            <label for="firstname" style="color: maroon; font-size: 1.5em;">نام : </label>
+            <input type="text" id="firstname" name="fname" size="35" style="margin-left: 10px;border-color: maroon;border-radius: 3px;color: darkblue;background-color: rgb(240, 240, 240);" placeholder="نام شما">
+            <label for="email" style="color: maroon; font-size: 1.5em;"> ایمیل :</label>
+            <input type="text" id="email" name="email" size="35" style="margin-left: 10px;border-color: maroon;border-radius: 3px;color: darkblue;background-color: rgb(240, 240, 240);" placeholder=" ایمیل شما"></br></br>
+            <span style="color: maroon; font-size: 1.5em;"> صحبت و پیشنهاد شما : </span>
+            <span id="sent" style="color: darkgreen; font-size: 1.5em; margin-right: 200px;"> </span></br>
+            <textarea id="Suggestion" rows="10" cols="68" style="margin-left: 10px; font-family: 'Vazir', 'B-Nazanin', 'Helvetica', 'Arial', sans-serif;; border-color: maroon;border-radius: 3px;color: darkblue;background-color: rgb(240, 240, 240);" placeholder=" پیشنهاد شما"></textarea></br>
+            <input type="submit" value="ارسال" size="20" onclick="del()" style="margin-left: 10px;border-color: maroon;border-radius: 3px;color: darkblue;background-color: rgb(240, 240, 240);">
+        </div>
+        
+    </body>
+</html>
